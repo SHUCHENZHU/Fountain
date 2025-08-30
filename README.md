@@ -98,9 +98,9 @@ import matplotlib.pyplot as plt
 
 
 
-* Train the Fountain model. The training is divided into two phases:
+* Train the Fountain model. The training process is divided into two phases:
   Phase 1 (0 to mid_iteration): Training without batch correction (VAE loss only).
-  Phase 2 (mid_iteration to max_iteration): Training with batch correction enabled.
+  Phase 2 (mid_iteration to max_iteration): Training with batch correction (VAE loss + MSE loss).
   
   ```python
   model.train(            
